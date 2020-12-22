@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function Circle(radius, color) {
+            this.radius = radius;
+            this.color = color;
+            this.getRadius = function() {
+                return this.radius
+            }
+            this.getArea = function() {
+                return this.radius * this.radius * Math.PI
+            }
+        }
+        var circle = new Circle(2, 'red')
+        var area = circle.getArea()
+        alert(area)
+    </script>
+</body>
+
+</html>
